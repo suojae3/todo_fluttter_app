@@ -1,49 +1,15 @@
-
-
-// 1. Import the Flutter Material package
 import 'package:flutter/material.dart';
 import 'package:todo/model.dart';
 import 'package:todo/toto_list.dart';
 
 
-/*
-====================================================================================
-====================================================================================
-*/
 
-// 2. The main function is the entry point for a Flutter app
-void main() {
-  runApp(MyApp());
-}
-
-// 3. MyApp is the root widget of the application
-class MyApp extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Todo App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      
-      // The home property takes a widget which is the main UI of the app
-      home: TodoListScreen(),
-    );
-  }
-}
-
-/*
-====================================================================================
-====================================================================================
-*/
-
-// 5. TodoListScreen is a StatefulWidget, which means it can hold mutable state
 class TodoListScreen extends StatefulWidget {
   
   @override
   _TodoListScreenState createState() => _TodoListScreenState();
 }
+
 
 // 6. _TodoListScreenState is where the mutable state for TodoListScreen is held
 class _TodoListScreenState extends State<TodoListScreen> {
@@ -104,5 +70,3 @@ class _TodoListScreenState extends State<TodoListScreen> {
     );
   }
 }
-
-
